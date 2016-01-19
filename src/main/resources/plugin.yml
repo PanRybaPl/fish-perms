@@ -1,0 +1,23 @@
+name: FishPerms
+version: 1.0
+main: pl.panryba.mc.permissions.Plugin
+depend: [FishDb]
+permissions:
+    fishperms.manage:
+        description: allows permissions management
+        default: op
+commands:
+  pp:
+    description: Player permissions management (alias to /perm player)
+    permission: fishperms.manage
+  pg:
+    description: Group permissions management (alias to /perm group)
+    permission: fishperms.manage
+  perm:
+    description: Permissions management
+    usage: |
+        /<command> player <name> groups
+        /<command> player <name> group (add <group> | remove <group> | enable <permission> | disable <permission> | remove <permission>)
+        /<command> group (enable <permission> | disable <permission> | remove <permission> | parent (add <group> | remove <group))
+        /<command> reload
+    permission: fishperms.manage

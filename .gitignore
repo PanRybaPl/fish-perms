@@ -1,0 +1,4 @@
+/.idea/
+/target/
+/h2test-create.sql
+/h2test-drop.sql
